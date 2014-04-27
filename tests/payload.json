@@ -4,12 +4,12 @@
         {
             "chapterName" : "Chapter 1",
             "chapterFile" : "chapter1.md",
-            "chapterContent" : "Some chapter content"
+            "chapterContent" : "'U29tZSBjaGFwdGVyIGNvbnRlbnQ='"
         },
         {
             "chapterName" : "Chapter 2",
             "chapterFile" : "chapter2.md",
-            "chapterContent" : "Some chapter content 2"
+            "chapterContent" : "'U29tZSBjaGFwdGVyIGNvbnRlbnQ='"
         }
     ]
 }

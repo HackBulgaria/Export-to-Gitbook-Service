@@ -13,6 +13,7 @@ var mime = require('mime');
 var base_converter = require("./base")
 
 app.use(bodyParser());
+app.set("jsonp callback", true)
 
 book_id = 1;
 BOOKS_REPOSITORY = "books/"
