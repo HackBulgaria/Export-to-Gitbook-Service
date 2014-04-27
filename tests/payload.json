@@ -1,0 +1,15 @@
+{
+    "introduction" : "Testing To generate a gitbook!",
+    "chapters" : [
+        {
+            "chapterName" : "Chapter 1",
+            "chapterFile" : "chapter1.md",
+            "chapterContent" : "Some chapter content"
+        },
+        {
+            "chapterName" : "Chapter 2",
+            "chapterFile" : "chapter2.md",
+            "chapterContent" : "Some chapter content 2"
+        }
+    ]
+}
