@@ -10,6 +10,8 @@ var archiver = require('archiver');
 var path = require('path');
 var mime = require('mime');
 
+var base_converter = require("./base")
+
 app.use(bodyParser());
 
 book_id = 1;
@@ -26,7 +28,7 @@ var saveBook = function(payload) {
 
     payload.chapters.forEach(function(chapter) {
         chapterPath = path + "/" + chapter.chapterFile
-        fs.writeFileSync(chapterPath, chapter.chapterContent)
+        fs.writeFileSync(chapterPath, base_converter.fromBase64(chapter.chapterContent))
     });
 
     chapters = payload.chapters;
