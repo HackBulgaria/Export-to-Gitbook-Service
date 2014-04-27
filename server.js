@@ -18,7 +18,7 @@ app.set("jsonp callback", true)
 book_id = 1;
 BOOKS_REPOSITORY = "books/"
 
-app.all('/', function(req, res, next) {
+app.all('*', function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   next();
@@ -95,7 +95,7 @@ app.post("/generate_book", function(req, res) {
     generateBook(bookId)
     var fullUrl = req.protocol + '://' + req.get('host');
     console.log(fullUrl)
-    previewUrl = fullUrl + "/   view_book/" + bookId
+    previewUrl = fullUrl + "/view_book/" + bookId
 
     book_id += 1;
 
